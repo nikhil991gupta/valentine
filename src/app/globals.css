@@ -1,0 +1,35 @@
+/* styles/tailwind.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #6BD3E2;
+  color: #F2E6C3;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #6BD3E2;
+  inset: 0;
+
+  scale: .0 1;
+  transform-origin: right;
+  transition: scale 450ms
+}
+
+.button:hover::after, 
+.button:focus-visible::after {
+  transform-origin: left;
+  scale: 1 1;
+}

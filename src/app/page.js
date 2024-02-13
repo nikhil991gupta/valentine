@@ -83,7 +83,7 @@ const YesNoComponent = () => {
         <Confetti width={window.innerWidth} height={window.innerHeight} />
       )}
 
-      <div className="flex flex-col items-center justify-center h-screen bg-rose-200 gap-5">
+      <div className="flex flex-col items-center justify-center h-screen bg-pink-100 gap-5">
         <div className="flex flex-col gap-2 justify-center items-center">
           <Image
             width={250}
@@ -92,12 +92,12 @@ const YesNoComponent = () => {
             src={image}
             alt=""
           />
-          <h1 className="text-2xl">Will you be my Valentine? </h1>
+          <h1 className="text-2xl text-red-600">Will you be my Valentine? </h1>
         </div>
         <div>
           <button
             onClick={handleYesClick}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded -ml-10 m-5"
+            className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded -ml-10 m-5"
             style={{ fontSize: yesButtonSize }}
           >
             Yes
